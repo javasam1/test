@@ -1,0 +1,10 @@
+Num = int(input())
+N = list(map(int, input().split()))
+
+N.sort(reverse = True)
+max = N[0]
+total = 0
+for j in range(len(N)):
+    total += N[j]/max*100
+
+print(total/Num)
